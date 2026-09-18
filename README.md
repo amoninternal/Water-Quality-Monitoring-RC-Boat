@@ -1,6 +1,6 @@
 # WARTEQ: ML-Based Spatial Clustering for Lake Water Quality Monitoring
 
-![System Architecture & Web Dashboard](./docs/dashboard_preview.jpg)
+![Web Dashboard](./docs/dashboard_preview.jpg)
 
 ## Overview
 **WARTEQ** is an IoT-enabled RC boat system designed for spatial water-quality monitoring across lakes and freshwater bodies. By deploying an unsupervised machine learning pipeline (K-Means Clustering) on in-situ sensor data, the system identifies spatial heterogeneity and categorizes water regions into relative quality zones (Good, Moderate, Poor).
@@ -26,6 +26,8 @@
 | **Feature Vector (6D)** | `[pH, Temp, Turb, TDS, log1p(Turb), log1p(TDS)]` |
 | **Preprocessing** | Z-Score Normalization (`StandardScaler`) + Logarithmic Skew Reduction |
 | **Dimensionality Reduction** | Principal Component Analysis (PCA) 2D Projection |
+
+![System Architechture](./docs/warteq_architecture.png)
 
 ### Hardware & Electronics Stack
 * **Microcontroller:** ESP32 DEVKIT V4
